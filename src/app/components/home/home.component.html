@@ -1,0 +1,72 @@
+<main class="w-full mx-auto flex flex-col gap-16">
+ <div class="max-w-7xl mx-auto flex flex-col gap-16">
+  <section class="flex justify-center gap-4">
+    <div class="justify-center flex flex-col">
+      <p class="uppercase">Kipper consultoria</p>
+      <h1 class="text-6xl font-semibold max-w-[550px] leading-tight">A consultoria que você busca para seu software</h1>
+    </div>
+    <img ngSrc="/assets/image.png" priority alt="Kipper consultoria" width="670" height="540">
+  </section>
+
+  <section class="flex flex-col pt-20">
+   <div class="flex gap-28 justify-between">
+    <h2 class="text-[60px] font-bold border-b-8 leading-tight border-violet-500">
+      95% das empresas
+    </h2>
+
+      <p class="text-[40px] font-semibold italic">
+        não sabem como lidar com problemas de <span class="bg-clip-text from-violet-800 to-violet-300 bg-gradient-to-br text-transparent font-semibold">escalibilidade</span> e grande volume de requisições.
+      </p>
+   </div>
+
+    <app-button class="mx-auto py-[90px]" variant="primary" btn-text="Fale com nossos especialistas"></app-button>
+  </section>
+ </div>
+
+ <div class="w-full bg-purple-700">
+    <app-newsletter-form></app-newsletter-form>
+ </div>
+
+ <div class="max-w-7xl mx-auto grid grid-cols-2 gap-16">
+  <div class="flex flex-col gap-4">
+    <img ngSrc="./assets/team.png" width="610" height="588" class="rounded-3xl">
+
+    <h3 class="text-3xl font-semibold">Equipe capacitada</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non fuga ad voluptates dignissimos, quia iste blanditiis neque illum iure optio consequuntur sunt odio suscipit cum eaque corporis, beatae unde laudantium.</p>
+  </div>
+  <div class="flex flex-col gap-4">
+    <img ngSrc="./assets/project-guide.png" width="610" height="588" class="rounded-3xl">
+
+    <h3 class="text-3xl font-semibold">Seus projetos guiados do zero</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non fuga ad voluptates dignissimos, quia iste blanditiis neque illum iure optio consequuntur sunt odio suscipit cum eaque corporis, beatae unde laudantium.</p>
+  </div>
+ </div>
+
+ <div class="border-t border-zinc-200 mx-auto max-w-4xl flex flex-col gap-8 pt-16">
+   <h3 class="text-5xl font-bold text-center bg-clip-text from-violet-800 to-violet-300 bg-gradient-to-br text-transparent">
+    Quer elevar seu software e seus negócios para outro nível?
+   </h3>
+   <app-button class="mx-auto" variant="primary" btn-text="Fale com nossos especialistas"></app-button>
+ </div>
+</main>
+
+<footer class="flex items-center justify-between px-16 py-8 mt-16 bg-zinc-50 border-t border-zinc-100 shadow-inner">
+  <img ngSrc="/assets/logo.png" width="150" height="100" alt="logo">
+  <div class="flex items-center gap-4">
+    <a href="">
+      <svg width="50" height="51" viewBox="0 0 50 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect y="0.964844" width="50" height="50" rx="25" fill="black"/>
+        <path d="M25.0029 19.2988C21.3139 19.2988 18.3383 22.275 18.3383 25.9648C18.3383 29.6547 21.3139 32.6309 25.0029 32.6309C28.6919 32.6309 31.6675 29.6547 31.6675 25.9648C31.6675 22.275 28.6919 19.2988 25.0029 19.2988ZM25.0029 30.2987C22.619 30.2987 20.67 28.3551 20.67 25.9648C20.67 23.5746 22.6132 21.631 25.0029 21.631C27.3926 21.631 29.3358 23.5746 29.3358 25.9648C29.3358 28.3551 27.3868 30.2987 25.0029 30.2987ZM33.4946 19.0261C33.4946 19.8905 32.7986 20.5809 31.9401 20.5809C31.0759 20.5809 30.3856 19.8847 30.3856 19.0261C30.3856 18.1675 31.0817 17.4713 31.9401 17.4713C32.7986 17.4713 33.4946 18.1675 33.4946 19.0261ZM37.9086 20.6041C37.81 18.5214 37.3344 16.6764 35.8089 15.1564C34.2892 13.6364 32.4447 13.1606 30.3624 13.0562C28.2163 12.9344 21.7837 12.9344 19.6376 13.0562C17.5611 13.1548 15.7166 13.6306 14.1911 15.1506C12.6656 16.6706 12.1958 18.5156 12.0914 20.5983C11.9695 22.7449 11.9695 29.1789 12.0914 31.3255C12.19 33.4083 12.6656 35.2533 14.1911 36.7733C15.7166 38.2933 17.5553 38.769 19.6376 38.8735C21.7837 38.9953 28.2163 38.9953 30.3624 38.8735C32.4447 38.7748 34.2892 38.2991 35.8089 36.7733C37.3286 35.2533 37.8042 33.4083 37.9086 31.3255C38.0305 29.1789 38.0305 22.7507 37.9086 20.6041ZM35.1361 33.6288C34.6837 34.7659 33.8078 35.642 32.6651 36.1003C30.954 36.7791 26.8938 36.6224 25.0029 36.6224C23.112 36.6224 19.046 36.7733 17.3407 36.1003C16.2038 35.6478 15.3279 34.7717 14.8697 33.6288C14.1911 31.9173 14.3477 27.8562 14.3477 25.9648C14.3477 24.0735 14.1969 20.0066 14.8697 18.3009C15.3221 17.1638 16.198 16.2877 17.3407 15.8294C19.0518 15.1506 23.112 15.3073 25.0029 15.3073C26.8938 15.3073 30.9598 15.1564 32.6651 15.8294C33.802 16.2819 34.6779 17.158 35.1361 18.3009C35.8147 20.0124 35.6581 24.0735 35.6581 25.9648C35.6581 27.8562 35.8147 31.9231 35.1361 33.6288Z" fill="white"/>
+      </svg>
+    </a>
+
+    <a href="">
+      <svg width="50" height="51" viewBox="0 0 50 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect y="0.964844" width="50" height="50" rx="25" fill="black"/>
+        <path d="M33.2473 13.2235C33.2473 13.0246 33.1683 12.8339 33.0277 12.6933C32.8871 12.5527 32.6964 12.4737 32.4975 12.4737H28.7487C26.861 12.3797 25.0129 13.0366 23.608 14.301C22.2032 15.5653 21.3559 17.3344 21.2512 19.2215V23.2702H17.5024C17.3036 23.2702 17.1129 23.3492 16.9723 23.4898C16.8317 23.6304 16.7527 23.8211 16.7527 24.0199V27.9186C16.7527 28.1175 16.8317 28.3082 16.9723 28.4488C17.1129 28.5894 17.3036 28.6684 17.5024 28.6684H21.2512V38.7151C21.2512 38.9139 21.3302 39.1046 21.4708 39.2452C21.6114 39.3859 21.8021 39.4648 22.001 39.4648H26.4995C26.6983 39.4648 26.889 39.3859 27.0296 39.2452C27.1702 39.1046 27.2492 38.9139 27.2492 38.7151V28.6684H31.1779C31.3447 28.6708 31.5074 28.6175 31.6405 28.517C31.7736 28.4166 31.8694 28.2746 31.9127 28.1136L32.9924 24.2149C33.0222 24.1041 33.0262 23.9879 33.0041 23.8753C32.982 23.7628 32.9343 23.6568 32.8648 23.5655C32.7952 23.4743 32.7057 23.4002 32.603 23.349C32.5004 23.2978 32.3873 23.2708 32.2726 23.2702H27.2492V19.2215C27.2865 18.8503 27.4608 18.5064 27.7381 18.2569C28.0154 18.0073 28.3757 17.8701 28.7487 17.8719H32.4975C32.6964 17.8719 32.8871 17.7929 33.0277 17.6523C33.1683 17.5117 33.2473 17.321 33.2473 17.1222V13.2235Z" fill="white"/>
+      </svg>
+    </a>
+  </div>
+</footer>
+
+

@@ -1,0 +1,19 @@
+<section class="grid grid-cols-2 max-w-7xl mx-auto gap-16 py-[50px] text-white">
+  <div class="gap-8 flex flex-col">
+    <h3 class="font-semibold text-3xl">
+      Fique por dentro de tendências
+    </h3>
+    <p class="text-sm leading-relaxed">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis, nostrum doloribus minima atque labore et a recusandae magnam. Dolor, iure voluptate. Architecto ut, sequi quod quia in rem nisi numquam?</p>
+    <p class="text-sm leading-relaxed">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis, nostrum doloribus minima atque labore et a recusandae magnam. Dolor, iure voluptate. Architecto ut, sequi quod quia in rem nisi numquam?</p>
+  </div>
+
+  <form [formGroup]="newsletterForm" class="flex flex-col gap-6">
+    <label for="name" class="font-bold">Nome completo</label>
+    <input type="text" id="name" formControlName="name" class="border-b-2 focus:outline-none bg-transparent">
+
+    <label for="email" class="font-bold">E-mail</label>
+    <input type="email" id="email" formControlName="email" class="border-b-2 focus:outline-none bg-transparent">
+
+    <app-button (submit)="onSubmit()" [loading]="loading()" [disabled]="!newsletterForm.valid"  variant="secondary" btn-text="Se inscreva"></app-button>
+  </form>
+</section>

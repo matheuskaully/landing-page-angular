@@ -1,0 +1,31 @@
+<!-- primary variant -->
+<button
+  (click)="submit()"
+  *ngIf="variant === 'primary'"
+  class="font-bold text-white rounded-3xl border-none cursor-pointer px-[40px] py-[20px] text-[24px] bg-gradient-to-br from-violet-800 to-violet-500 disabled:opacity-60 disabled:cursor-not-allowed"
+  [disabled]="disabled"
+>
+  <span *ngIf="!loading">
+    {{ btnText }}
+  </span>
+
+  <span *ngIf="loading">
+    Carregando...
+  </span>
+</button>
+
+<!-- secondary variant -->
+<button
+  (click)="submit()"
+  *ngIf="variant === 'secondary'"
+  class="font-bold text-zinc-700 bg-zinc-50 rounded-3xl border-none cursor-pointer text-[16px] px-[40px] py-[20px] disabled:opacity-60 disabled:cursor-not-allowed"
+  [disabled]="disabled"
+>
+  <span *ngIf="!loading">
+    {{ btnText }}
+  </span>
+
+  <span *ngIf="loading">
+    Carregando...
+  </span>
+</button>
